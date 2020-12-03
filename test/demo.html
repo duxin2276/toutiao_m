@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div v-for="(v, k, i) in userinfo" :key="i">{{v+'------'+k +'----'+i}}</div>
+    </div>
+    <script>
+        let vm = new Vue({
+            data:{
+                userinfo: {
+                    name: '小猪',
+                    age: 18,
+                    sex: '男'
+                }
+            }
+        }).$mount('#app')
+    </script>
+</body>
+</html>
