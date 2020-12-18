@@ -42,6 +42,17 @@ const routes = [
     path: '/search',
     name: 'search',
     component: () => import('@/views/Search/index')
+  },
+  {
+    path: '/article/:articleId',
+    name: 'article',
+    component: () => import('@/views/article/index'),
+    props: true // 开启props传参
+  },
+  {
+    path: '/user/profile',
+    name: 'userProfile',
+    component: () => import('@/views/user-profile/index')
   }
 ]
 

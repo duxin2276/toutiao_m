@@ -4,14 +4,14 @@ import request from '../utils/request.js'
 export function getChannelMethod () {
   return request({
     method: 'GET',
-    url: '/app/v1_0/channels'
+    url: '/v1_0/channels'
   })
 }
 
 export function addUserChannels (channel) {
   return request({
     method: 'PATCH',
-    url: '/app/v1_0/user/channels',
+    url: '/v1_0/user/channels',
     data: [channel]
   })
 }
@@ -19,6 +19,6 @@ export function addUserChannels (channel) {
 export function deleteUserChannels (id) {
   return request({
     method: 'PATCH',
-    url: '/app/v1_0/user/channels/' + id
+    url: '/v1_0/user/channels/' + id
   })
 }

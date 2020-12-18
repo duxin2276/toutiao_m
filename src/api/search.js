@@ -4,7 +4,7 @@ import request from '../utils/request.js'
 export function getSuggestions (q) {
   return request({
     method: 'GET',
-    url: '/app/v1_0/suggestion',
+    url: '/v1_0/suggestion',
     params: {
       q
     }
@@ -15,7 +15,7 @@ export function getSuggestions (q) {
 export function getResults (params) {
   return request({
     method: 'GET',
-    url: '/app/v1_0/search',
+    url: '/v1_0/search',
     params
   })
 }
